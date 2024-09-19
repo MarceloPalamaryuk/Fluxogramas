@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="14721"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-19 09:06:03 "/>
+        <attribute name="created" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMTk7IjA4OjQ1OjQ0ICI7MjU3Mw=="/>
+        <attribute name="edited" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMTk7IjA5OjA2OjAzICI7MTsyNjc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escreve o 1.numero.&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Escreve o 2.numero.&quot;" newline="True"/>
+            <input variable="y"/>
+            <output expression="&quot;A soma &#233; = &quot; &amp; (x+y)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
