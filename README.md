@@ -5,3 +5,4 @@ Exercicio2: O fluxograma lé o primeiro e ultimo nome de uma pessoa com as varia
 
 Portugol-
 Exercicio1: Copiar o "Flowgrythm.Exercicio1" para o Portugol.
+Exercicio2: Copiar o "Flowgorithm.Exercicio2" para o Portugol.
