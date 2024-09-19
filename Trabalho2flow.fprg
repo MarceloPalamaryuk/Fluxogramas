@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="14721"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-19 09:53:59 "/>
+        <attribute name="created" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMTk7IjA5OjIyOjI5ICI7MjU3Mg=="/>
+        <attribute name="edited" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMTk7IjA5OjUzOjU5ICI7MTsyNjg3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="String" array="False" size=""/>
+            <output expression="&quot;Ol&#225;, qual o teu primeiro nome?&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Qual o teu ultimo nome?&quot;" newline="True"/>
+            <input variable="y"/>
+            <output expression="&quot;Bem vindo, &quot; &amp; x &amp; &quot; &quot; &amp; y &amp; &quot;!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
