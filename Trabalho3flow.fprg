@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="14721"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-20 10:21:28 "/>
+        <attribute name="created" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMTk7IjA4OjQ1OjQ0ICI7MjU3Mw=="/>
+        <attribute name="edited" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMjA7IjEwOjIxOjI4ICI7MzsyNjY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, resultado" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escreve o 1.numero.&quot;" newline="True"/>
+            <input variable="x"/>
+            <assign variable="resultado" expression="x*x"/>
+            <output expression="&quot;A quadrado desse numero &#233; = &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
