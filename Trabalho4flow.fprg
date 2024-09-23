@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="14721"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-23 02:54:11 "/>
+        <attribute name="created" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMTk7IjA4OjQ1OjQ0ICI7MjU3Mw=="/>
+        <attribute name="edited" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMjM7IjAyOjU0OjExICI7NzsyNjcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="genero, aux" type="String" array="False" size=""/>
+            <assign variable="genero" expression="&quot;IG&quot;"/>
+            <output expression="&quot;Identificas-te como rapaz? (S=SIM / N=N&#195;O)&quot;" newline="True"/>
+            <input variable="aux"/>
+            <if expression="aux == &quot;S&quot;">
+                <then>
+                    <assign variable="genero" expression="&quot;Masculino&quot;"/>
+                </then>
+                <else>
+                    <output expression="&quot;Identificas-te como rapariga? (S=SIM / N=N&#195;O)&quot;" newline="True"/>
+                    <input variable="aux"/>
+                    <if expression="aux == &quot;S&quot;">
+                        <then>
+                            <assign variable="genero" expression="&quot;Feminino&quot;"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Tu es do genero: &quot; &amp; genero &amp; &quot;!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
