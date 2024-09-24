@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="14721"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 11:38:59 "/>
+        <attribute name="created" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMjQ7IjA5OjU0OjExICI7MjU2NA=="/>
+        <attribute name="edited" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMjQ7IjExOjM4OjU5ICI7MjsyNjgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, morada, genero, mensagem" type="String" array="False" size=""/>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;Qual o seu nome?&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Qual a sua idade?&quot;" newline="True"/>
+            <input variable="idade"/>
+            <output expression="&quot;Onde mora?&quot;" newline="True"/>
+            <input variable="morada"/>
+            <output expression="&quot;Qual o seu genero? M(masculino) F(femenino)&quot;" newline="True"/>
+            <input variable="genero"/>
+            <assign variable="mensagem" expression="&quot;&quot;"/>
+            <if expression="genero == &quot;M&quot;">
+                <then>
+                    <assign variable="mensagem" expression="&quot;Caro Sr, &quot;"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="genero == &quot;F&quot;">
+                <then>
+                    <assign variable="mensagem" expression="&quot;Cara Sra,  &quot;"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="mensagem" expression="mensagem &amp; nome"/>
+            <if expression="idade &gt;= 18">
+                <then>
+                    <assign variable="mensagem" expression="mensagem &amp; &quot; &#233; maior de idade &quot;"/>
+                </then>
+                <else>
+                    <assign variable="mensagem" expression="mensagem &amp; &quot; &#233; menor de idade &quot;"/>
+                </else>
+            </if>
+            <assign variable="mensagem" expression="mensagem &amp; &quot;e mora em &quot;"/>
+            <assign variable="mensagem" expression="mensagem &amp; morada"/>
+            <output expression="mensagem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
