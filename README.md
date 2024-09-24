@@ -13,6 +13,10 @@ Se sim, a variavel "genero" torna-se "Masculino", senão, o programa pergunta se
 Exercicio5: O fluxo tem uma variavel "idade" e pergunta ao utilizador a sua idade, depois lé a idade que o utilizador colocou.
 Se a idade >=18, o programa escreve ";-)", senão escreve "Es menor de idade (idade)!; Cresce i aparece!"
 
+Exercicio5: "Caro Sr". Se for genero feminino: "Cara Sra"
+Se for menor de 18 escrever "(nome) é menor de idade". Se for maior de 18 escrever "(nome) é maior de idade"
+No final escrever "e mora em (localidade)".
+
 Portugol-------------------------------------------------
 
 Exercicio1: Copiar o "Flowgrythm.Exercicio1" para o Portugol.
@@ -25,7 +29,4 @@ Exercicio4: Copiar o "Flowgorithm.Exercicio4" para o Portugol.
 
 Exercicio5: Copiar o "Flowgorithm.Exercicio5" para o Portugol.
 
-Exercicio6: Pedir o nome, idade, localidade e genero.
-Se o genero for Masculino: "Caro Sr". Se for genero feminino: "Cara Sra"
-Se for menor de 18 escrever "(nome) é menor de idade". Se for maior de 18 escrever "(nome) é maior de idade"
-No final escrever "e mora em (localidade)".
+Exercicio6: Copiar o "Flowgorithm.Exercicio6" para o Portugol.
