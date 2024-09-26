@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="14721"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-26 10:37:34 "/>
+        <attribute name="created" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMjY7IjA5OjQ3OjI3ICI7MjU3NQ=="/>
+        <attribute name="edited" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMjY7IjA5OjQ3OjI5ICI7MTsxNDcyMTtBVURJT1ZJU1VBSVNfMjA7MjAyNC0wOS0yNjsiMDk6MDA6MDUgIjtUcmFiYWxobzcuMS5mcHJnOzY4MDM="/>
+        <attribute name="edited" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMjY7IjEwOjM3OjM0ICI7MTsyNjcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="max, min" type="Integer" array="False" size=""/>
+            <declare name="x, y, z" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escreve o 1&#186; numero.&quot;" newline="True"/>
+            <input variable="x"/>
+            <assign variable="max" expression="x"/>
+            <assign variable="min" expression="x"/>
+            <output expression="&quot;Escreve o 2&#186; numero.&quot;" newline="True"/>
+            <input variable="y"/>
+            <if expression="y &gt; max">
+                <then>
+                    <assign variable="max" expression="y"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="y &lt; min">
+                <then>
+                    <assign variable="min" expression="y"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;Escreva o 3&#186; numero.&quot;" newline="True"/>
+            <input variable="z"/>
+            <if expression="z &gt; max">
+                <then>
+                    <assign variable="max" expression="z"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="z &lt; min">
+                <then>
+                    <assign variable="min" expression="z"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="max &amp; &quot; &#233; o maior numero!&quot;" newline="True"/>
+            <output expression="min &amp; &quot; &#233; o menor numero!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

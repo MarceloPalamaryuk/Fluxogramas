@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="14721"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-26 09:47:09 "/>
+        <attribute name="created" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMjY7IjA5OjAwOjA1ICI7MjU2MA=="/>
+        <attribute name="edited" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMjY7IjA5OjQ3OjA5ICI7MjsyNjg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escreve o 1&#186; numero.&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Escreve o 2&#186; numero.&quot;" newline="True"/>
+            <input variable="y"/>
+            <if expression="x &gt;= y">
+                <then>
+                    <output expression="x &amp; &quot; &#233; maior.&quot;" newline="True"/>
+                    <output expression="y &amp; &quot; &#233; o menor.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="y &amp; &quot; &#233; o maior.&quot;" newline="True"/>
+                    <output expression="x &amp; &quot;&#233; o menor&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
