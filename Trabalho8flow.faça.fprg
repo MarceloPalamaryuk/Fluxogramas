@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="14721"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-27 10:06:12 "/>
+        <attribute name="created" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMjc7IjEwOjAwOjEzICI7MjU1Mg=="/>
+        <attribute name="edited" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMjc7IjEwOjA2OjEyICI7MTsyNjY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="passo, conta" type="Integer" array="False" size=""/>
+            <assign variable="passo" expression="0"/>
+            <assign variable="conta" expression="0"/>
+            <do expression="passo &lt; 10">
+                <assign variable="conta" expression="conta + 2"/>
+                <assign variable="passo" expression="passo + 1"/>
+                <output expression="passo &amp; &quot; X 2 &#233; &quot; &amp; conta &amp; &quot;!&quot;" newline="True"/>
+            </do>
+            <output expression="&quot;A soma de &quot; &amp;  passo &amp; &quot; X o numero 2 &#233; &quot; &amp;  conta &amp; &quot;!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

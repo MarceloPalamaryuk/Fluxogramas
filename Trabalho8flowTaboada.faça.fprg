@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="14721"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-27 10:40:35 "/>
+        <attribute name="created" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMjc7IjEwOjAwOjEzICI7MjU1Mg=="/>
+        <attribute name="edited" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMjc7IjEwOjQwOjM1ICI7MzsyNjcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="passo, conta, num" type="Integer" array="False" size=""/>
+            <assign variable="passo" expression="0"/>
+            <assign variable="conta" expression="0"/>
+            <output expression="&quot;Escreve um numero para eu fazer a taboada dele!&quot;" newline="True"/>
+            <input variable="num"/>
+            <do expression="passo &lt; 10">
+                <assign variable="conta" expression="conta + num"/>
+                <assign variable="passo" expression="passo + 1"/>
+                <output expression="passo &amp; &quot; X &quot; &amp; 2 &amp; &quot; &#233; &quot; &amp; conta &amp; &quot;!&quot;" newline="True"/>
+            </do>
+            <output expression="&quot;A soma de &quot; &amp;  passo &amp; &quot; X o numero &quot; &amp; num &amp;  &quot; &#233; &quot; &amp;  conta &amp; &quot;!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
