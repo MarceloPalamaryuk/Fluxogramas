@@ -19,7 +19,9 @@ No final escrever "e mora em (localidade)".
 
 Exercicio7: O programa pede para o utilizador escrever 3 numeros diferentes. Depois o programa ve qual desses numeros é o maior e qual é o menor.
 
+Exercicio8:Faz a taboada do 10 de acordo com o numero que o utilizador pediu.
+
 Portugol-------------------------------------------------
 
-Exercicio1-7: Copiar o "Flowgrythm.Exercicio1-7" para o Portugol.
+Exercicio1-8: Copiar o "Flowgrythm.Exercicio1-7" para o Portugol.
 
