@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="14721"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-30 04:51:51 "/>
+        <attribute name="created" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMzA7IjA0OjIxOjAxICI7MjU0OQ=="/>
+        <attribute name="edited" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMzA7IjA0OjUxOjUxICI7MjsyNjY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base, expoente, resultado, i" type="Integer" array="False" size=""/>
+            <assign variable="resultado" expression="1"/>
+            <assign variable="base" expression="2"/>
+            <assign variable="expoente" expression="4"/>
+            <for variable="i" start="expoente" end="1" direction="dec" step="1">
+                <assign variable="resultado" expression="base * resultado"/>
+            </for>
+            <output expression="&quot;A resposta da base &quot; &amp; base &amp; &quot; do expoente &quot; &amp; expoente &amp; &quot; &#233; &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

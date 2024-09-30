@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="14721"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-30 03:23:49 "/>
+        <attribute name="created" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMjc7IjEwOjAwOjEzICI7MjU1Mg=="/>
+        <attribute name="edited" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMDktMzA7IjAzOjIzOjQ5ICI7NjsyNjc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="passo, conta, num, aux" type="Integer" array="False" size=""/>
+            <assign variable="passo" expression="1"/>
+            <assign variable="conta" expression="0"/>
+            <assign variable="aux" expression="10"/>
+            <output expression="&quot;Escreve um numero para eu fazer a taboada dele!&quot;" newline="True"/>
+            <input variable="num"/>
+            <while expression="aux &gt; 0">
+                <assign variable="aux" expression="aux - 1"/>
+                <assign variable="conta" expression="conta + num"/>
+                <output expression="num &amp; &quot; X &quot; &amp; passo &amp; &quot; &#233; &quot; &amp; conta &amp; &quot;!&quot;" newline="True"/>
+                <if expression="aux &gt; 0">
+                    <then>
+                        <assign variable="passo" expression="passo + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <output expression="&quot;A soma de &quot; &amp;  passo &amp; &quot; X o numero &quot; &amp; num &amp;  &quot; &#233; &quot; &amp;  conta &amp; &quot;!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
