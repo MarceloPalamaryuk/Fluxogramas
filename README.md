@@ -21,7 +21,13 @@ Exercicio7: O programa pede para o utilizador escrever 3 numeros diferentes. Dep
 
 Exercicio8:Faz a taboada do 10 de acordo com o numero que o utilizador pediu.
 
+Exercicio9: Mesma tema que o exercicio8, mas aplicando a função "enquanto".
+
+Exercicio10: Mesmo tema que o exercicio8, mas aplicando a função "para".
+
+Exercicio11: Calcula o resultado de uma base e um expoente usando a função "para".
+
 Portugol-------------------------------------------------
 
-Exercicio1-8: Copiar o "Flowgrythm.Exercicio1-7" para o Portugol.
+Exercicio1-11: Copiar o "Flowgrythm.Exercicio1-11" para o Portugol.
 
