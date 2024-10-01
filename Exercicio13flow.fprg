@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="14721"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-01 11:52:40 "/>
+        <attribute name="created" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMTAtMDE7IjExOjMxOjMwICI7MjU0MA=="/>
+        <attribute name="edited" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMTAtMDE7IjExOjUyOjQwICI7MjsyNjUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, aux, resposta" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="1"/>
+            <assign variable="resposta" expression="0"/>
+            <for variable="aux" start="1" end="10" direction="inc" step="1">
+                <assign variable="resposta" expression="resposta + x"/>
+                <assign variable="x" expression="x + 1"/>
+            </for>
+            <output expression="&quot;A soma  = &quot; &amp; resposta" newline="True"/>
+            <assign variable="x" expression="11"/>
+            <assign variable="resposta" expression="0"/>
+            <for variable="aux" start="1" end="9" direction="inc" step="1">
+                <assign variable="resposta" expression="resposta + x"/>
+                <assign variable="x" expression="x + 1"/>
+            </for>
+            <output expression="&quot;A soma = &quot; &amp; resposta" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

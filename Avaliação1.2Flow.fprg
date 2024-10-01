@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="14721"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-01 10:20:46 "/>
+        <attribute name="created" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMTAtMDE7IjA5OjU1OjEyICI7MjU1Mw=="/>
+        <attribute name="edited" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMTAtMDE7IjEwOjIwOjQ2ICI7MzsyNjU0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escreve o 1&#186; numero.&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Escreve o 2&#186; numero.&quot;" newline="True"/>
+            <input variable="num2"/>
+            <if expression="num2 &gt; 0">
+                <then>
+                    <output expression="&quot;A divis&#227;o dos numeros &quot; &amp; num1 &amp; &quot; dividir por &quot; &amp; num2 &amp; &quot; = &quot; &amp; (num1 / num2)" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="num2 &gt;= 0">
+                <then>
+                    <output expression="&quot;&#201; imposs&#237;vel efetuar a divis&#227;o.&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
