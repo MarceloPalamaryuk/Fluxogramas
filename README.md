@@ -27,7 +27,13 @@ Exercicio10: Mesmo tema que o exercicio8, mas aplicando a função "para".
 
 Exercicio11: Calcula o resultado de uma base e um expoente usando a função "para".
 
+Exercicio16: O programa pede para o utilizador escrever um conjunto de numeros a sua escolha, depois, soma todos esses numeros no final
+
+Exercicio17: O programa pede um numero ao utilizador, e depois escreve todos os numeros separadamente que estavam atraz do numero introduzido pelo utilizador.
+
+Exercicio18:
+
 Portugol-------------------------------------------------
 
-Exercicio1-11: Copiar o "Flowgrythm.Exercicio1-11" para o Portugol.
+Exercicio1-18: Copiar o "Flowgrythm.Exercicio1-11" para o Portugol.
 
