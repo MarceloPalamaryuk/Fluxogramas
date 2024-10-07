@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="14721"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-07 04:47:10 "/>
+        <attribute name="created" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMTAtMDc7IjAzOjUwOjA4ICI7MjU1Mw=="/>
+        <attribute name="edited" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMTAtMDc7IjA0OjQ3OjEwICI7MzsyNjYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, resposta, save, seq" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escreve um numero, e eu irei transforma-lo no seu fatorial!&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="save" expression="num"/>
+            <assign variable="seq" expression="num"/>
+            <assign variable="resposta" expression="num"/>
+            <while expression="seq != 1">
+                <assign variable="resposta" expression="resposta * (num - 1)"/>
+                <assign variable="num" expression="num - 1"/>
+                <assign variable="seq" expression="seq - 1"/>
+            </while>
+            <output expression="&quot;O fatorial do numero &quot; &amp; save &amp; &quot; = &quot; &amp; resposta" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

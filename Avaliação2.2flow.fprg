@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="14721"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-07 04:29:00 "/>
+        <attribute name="created" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMTAtMDc7IjAzOjI3OjE0ICI7MjU1NA=="/>
+        <attribute name="edited" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMTAtMDc7IjA0OjI5OjAwICI7MjsyNjYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, resposta" type="String" array="False" size=""/>
+            <assign variable="resposta" expression="&quot;&quot;"/>
+            <do expression="nome != &quot;.&quot;">
+                <output expression="&quot;Escreve o teu nome&quot;" newline="True"/>
+                <input variable="nome"/>
+                <assign variable="resposta" expression="resposta &amp; &quot; &quot; &amp; nome"/>
+            </do>
+            <output expression="resposta" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

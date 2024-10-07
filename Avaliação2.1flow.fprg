@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="14721"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-07 03:21:54 "/>
+        <attribute name="created" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMTAtMDc7IjAyOjMxOjEyICI7MjU0Ng=="/>
+        <attribute name="edited" value="MTQ3MjE7QVVESU9WSVNVQUlTXzIwOzIwMjQtMTAtMDc7IjAzOjIxOjU0ICI7MTsyNjYw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="resposta, aux, num, save" type="Integer" array="False" size=""/>
+            <assign variable="resposta" expression="1"/>
+            <assign variable="num" expression="2"/>
+            <assign variable="save" expression="1"/>
+            <for variable="aux" start="1" end="51" direction="inc" step="1">
+                <assign variable="resposta" expression="resposta * num"/>
+                <output expression="save &amp; &quot; X &quot; &amp; num &amp; &quot; = &quot; &amp; resposta" newline="True"/>
+                <assign variable="num" expression="num + 1"/>
+                <assign variable="save" expression="resposta"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
