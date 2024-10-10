@@ -37,3 +37,5 @@ Portugol-------------------------------------------------
 
 Exercicio1-18: Copiar o "Flowgrythm.Exercicio1-11" para o Portugol.
 
+Exericico20: O programa usa vetores para fazer varias respostas so com uma variavel. Neste caso, ele da o nome do modulo e a nota que o aluno obteve na mesma.
+
