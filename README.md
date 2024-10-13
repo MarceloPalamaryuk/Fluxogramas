@@ -33,9 +33,13 @@ Exercicio17: O programa pede um numero ao utilizador, e depois escreve todos os 
 
 Exercicio18:
 
+Exericico22: O Programa pede ao utilizador 10 numeros, em seguida ve quais desses 10 numeros é o menor e maior. No final o programa mostra o maior e menor numero, e tambem mostra a media entre eles.
+
 Portugol-------------------------------------------------
 
 Exercicio1-18: Copiar o "Flowgrythm.Exercicio1-11" para o Portugol.
 
 Exericico20: O programa usa vetores para fazer varias respostas so com uma variavel. Neste caso, ele da o nome do modulo e a nota que o aluno obteve na mesma.
+
+Exercicio22: O Programa pede ao utilizador 10 numeros, em seguida ve quais desses 10 numeros é o menor e maior. No final o programa mostra o maior e menor numero, e tambem mostra a media entre eles.
 
