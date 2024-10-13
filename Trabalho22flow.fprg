@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="marce"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-13 01:35:50 "/>
+        <attribute name="created" value="bWFyY2U7TUFSQ0VMT19FUElDTzsyMDI0LTEwLTEzOyIwMToyNDoxMiAiOzI2NzY="/>
+        <attribute name="edited" value="bWFyY2U7TUFSQ0VMT19FUElDTzsyMDI0LTEwLTEzOyIwMTozNTo1MCAiOzE7Mjc4OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Real" array="True" size="10"/>
+            <declare name="max, min, respostamedia, i" type="Real" array="False" size=""/>
+            <assign variable="max" expression="0"/>
+            <assign variable="min" expression="0"/>
+            <assign variable="respostamedia" expression="0"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Escreve o &quot; &amp; (i + 1) &amp; &quot;&#186; numero. R.:&quot;" newline="True"/>
+                <input variable="num[i]"/>
+                <if expression="num[i] &gt;= max">
+                    <then>
+                        <assign variable="max" expression="num[i]"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="num[i] &lt;= min">
+                    <then>
+                        <assign variable="min" expression="num[i]"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="respostamedia" expression="respostamedia + num[i]"/>
+            </for>
+            <output expression="&quot;O maior numero &#233;: &quot; &amp;  max" newline="True"/>
+            <output expression="&quot;O menor numero &#233;: &quot; &amp; min" newline="True"/>
+            <output expression="&quot;A media de todos esse numeros &#233;: &quot; &amp; (respostamedia/10)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
