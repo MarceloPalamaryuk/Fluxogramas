@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-family: "Itim", itin;
+    font-size: 14px;
+
+}
+#areaConteudo {width:80%; margin: 0 auto;}
+
+.estiloTabela { width:100%; border: 0px solid white; }
+.largura {width: 30%;}
+.espaçamento1 {width: 5%;} 
