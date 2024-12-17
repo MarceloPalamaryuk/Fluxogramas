@@ -1,16 +1,20 @@
 #include <stdio.h>
 #include <iostream>
 using namespace std;
+//mudar de letras que o utilizador vai ter que descobrir. Ex.: 7 letras.
+const int numPalavras = 9;
 
-string palavra = "arvore";
-string auxpalavra[6];
+string palavra[numPalavras];
+string auxpalavra[numPalavras];
 int numTentativas = 0;
 string tabela = "";
 string letrasUsadas = "";
-bool jogotermina = true;
+bool jogoperde = true;
+bool jogoganha = true;
 
 
 void desenharEnforcado() {
+    //boneco que vai aparecer dependendo do numero de erros.
 if (numTentativas >= 1) cout << "  O " << endl; // Cabeça
 if (numTentativas >= 2) cout << "  |/" << endl; // Corpo
 if (numTentativas >= 3) cout << " (| " << endl; // Braços e corpo
@@ -20,54 +24,98 @@ if (numTentativas >= 5) cout << " / ) " << endl; // Pernas
 
 
 void criarPalavra() {
-    auxpalavra[0] = "_";
-    auxpalavra[1] = "_";
-    auxpalavra[2] = "_";
-    auxpalavra[3] = "_";
-    auxpalavra[4] = "_";
-    auxpalavra[5] = "_";
+    //iniciar o quadro 1P.
+    for (int i = 0; i<numPalavras; i++) {
+        auxpalavra[i] = "_";
+    }
+
+    //palavra que o utilizador vai ter que descobrir.
+    palavra[0] = "p";
+    palavra[1] = "a";
+    palavra[2] = "l";
+    palavra[3] = "m";
+    palavra[4] = "e";
+    palavra[5] = "i";
+    palavra[6] = "r";
+    palavra[7] = "a";
+    palavra[8] = "s";
+    //palavra[9] = "s";
+    //palavra[10] = "s";
+
+    //iniciar o quadro 2..
+    for (int j = 0; j<numPalavras; j++) {
+        tabela = tabela + auxpalavra[j] + " ";
+    }
 }
 
 void palavras() {
-    tabela = auxpalavra[0] + " " + auxpalavra[1] + " " + auxpalavra[2] + " " + auxpalavra[3] + " " + auxpalavra[4] + " " + auxpalavra[5];
+    //dar update e mostrar o quadro.
+    string auxtabela = "";
+    for (int j = 0; j<numPalavras; j++) {
+        auxtabela= auxtabela + auxpalavra[j] + " ";
+    }
+    tabela = auxtabela;
     cout << tabela;
 }
 
 void jogar() {
     string res;
-    cout << "\nEscreva uma letra para tentar descobrir qual e a palavra!\nR.:";
+    int aux, erro = 0, acertou = 0;
+    cout << "\nEscreva uma letra para tentar descobrir qual e a palavra!\nEscreve as letras em minusculas.\nR.:";
     cin >> res;
 
-    if (res == "a") {
-    auxpalavra[0] = "a";
-    } else if (res == "r") {
-    auxpalavra[1] = "r";
-    auxpalavra[4] = "r";
-    } else if (res == "v") {
-    auxpalavra[2] = "v";
-    } else if (res == "o") {
-    auxpalavra[3] = "o";
-    } else if (res == "e") {
-    auxpalavra[5] = "e";
-    } else if (res == palavra) {
-    auxpalavra[0] = "a";
-    auxpalavra[1] = "r";
-    auxpalavra[2] = "v";
-    auxpalavra[3] = "o";
-    auxpalavra[4] = "r";
-    auxpalavra[5] = "e";
-    } else {
-    numTentativas = numTentativas + 1;
-    cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nErrou! " << numTentativas << " de 5 tentativas!\n";
+    //ver se acertou -------------------------------------------------------------
+    for (int i = 0; i<numPalavras; i++) {
+        if (res == palavra[i]) {
+            auxpalavra[i] = res;
+            acertou = acertou + 1;
+        }
     }
+    if (acertou > 0) {
+        cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAcertou! " << numTentativas << " de 5 tentativas.\n";
+    }
+    //---------------------------------------------------------------------------
+
+
+
+
+    //ver se errou -------------------------------------------------------------
+    for (int j = 0; j<numPalavras; j++) {
+        if (res != palavra[j]) {erro = erro + 1;}
+    }
+
+    if (erro == numPalavras) {
+        numTentativas = numTentativas + 1;
+        cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nERROU MISERAVEL! " << numTentativas << " de 5 tentativas.\n";
+    }
+    //--------------------------------------------------------------------------
+
+    //mostrar as letras que o utilizador usou------------------------------------
     letrasUsadas = letrasUsadas + res + ",";
     cout << "Letras usadas: " << letrasUsadas << "\n\n";
 }
 
-void verificar() {
+void verificarperdeu() {
+    //verifica se o utilizador perdeu, neste caso, 5 tentaticas falhas = perdeu.
     if (numTentativas == 5) {
-    jogotermina = false;
-    } else {jogotermina = true;}
+    jogoperde = false;
+    cout << "Haha Perdeste! Es terrivel!!11!1!1!1\n";
+    cout << "A palavra e '";
+    for (int i = 0; i<numPalavras; i++) {cout << palavra[i];}
+    cout << "'.\n";
+    } else {jogoperde = true;}
+}
+
+void verificarganhou() {
+    //verificar se o utilizador ganhou, verificando se cada letra que ele inseriu esta de acordo com a palavra.
+    int palavrasCorretas = 0;
+    for (int i = 0; i<numPalavras; i++) {
+        if (auxpalavra[i] == palavra[i]) {palavrasCorretas = palavrasCorretas + 1;}
+    }
+    if (palavrasCorretas == numPalavras) {
+        jogoganha= false;
+        cout << "\nGanhaste!(Era bue facil lol).";
+    }
 }
 
 
@@ -80,11 +128,13 @@ int main() {
 
     jogar();
 
-    //verificar();
+    verificarperdeu();
+
+    verificarganhou();
 
     desenharEnforcado();
 
-    } while(jogotermina = true);
+    } while(jogoperde && jogoganha);
     return 0;
 }
 
